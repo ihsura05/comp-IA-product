@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./classes.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../home/home.html">Home</a>
+      <a href="../students/students.html">Students</a>
+      <a href="../assignments/assignments.html">Assignments</a>
+      <a href="../payments/payments.html">Payments</a>
+      <a href="../classes/classes.html">Classes</a>
+      <a href="../time zone/timezone.html">Time Zone<br>Convertor</a>
+      <a href="../login/login.html">Sign Out</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <h1 class = "title">CLASSES</h1>
+      <br><br>
+      <form class = "button">
+        <br>
+        <input type = "text" id = "name" name = "name" class = "name" placeholder="Event Name" style="background-color: lightblue; height: 20px;">
+        <br>
+        <input type = "datetime-local" id = "time" name = "time" class = "time" placeholder="Time" style="background-color: lightblue; height: 20px;">
+        <br>
+        <input type = "text" id = "description" name = "description" class = "description" placeholder="Description" style="background-color: lightblue; height: 20px;">
+        <br><br>
+        <button>ADD EVENT</button>
+      </form>
+
+      <section class = "events">
+      </section>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./classes.js"></script>
+  </body>
+</html>
+ 

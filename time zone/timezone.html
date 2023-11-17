@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./timezone.css" />
+  </head>
+  <body>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../home/home.html">Home</a>
+        <a href="../students/students.html">Students</a>
+        <a href="../assignments/assignments.html">Assignments</a>
+        <a href="../payments/payments.html">Payments</a>
+        <a href="../classes/classes.html">Classes</a>
+        <a href="../time zone/timezone.html">Time Zone<br>Convertor</a>
+        <a href="../login/login.html">Sign Out</a>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>      
+
+      <h1 class = "title">TIME ZONE<br>CONVERTOR</h1>
+
+      <br><br>
+      <form>
+        <section class = "input">
+            <label for "baselocation">BASE LOCATION (OFFSET FROM UTC):</label>
+            <input type = "text" id = "baselocation" name = "baselocation" placeholder="Base Location" style="background-color: white; height: 20px;">
+            <div class="dropdown">
+              <buton>OFFSETS<br>(hover over me)</buton>
+              <div class="dropdown-content">
+                <ul>
+                  <li>Germany: <u>+0200</u></li>
+                  <li>India: <u>+0530</u></li>
+                  <li>Dubai: <u>+0400</u></li>
+                  <li>France: <u>+0200</u></li>
+                  <li>United Kingdom: <u>+0100</u></li>
+                  <li>Australia: <u>+0845</u></li>
+                  <li>Japan: <u>+0900</u></li>
+                  <li>Thailand: <u>+0700</u></li>
+                  <li>United States:
+                    <ul>
+                      <li>Chicago: <u>-0500</u></li>
+                    </ul>
+                  </li>
+                  <li>Philippines: <u>+0800</u></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <br>
+        <section class = "input">
+            <label for "basetime">BASE TIME:</label>
+            <input type = "time" id = "basetime" placeholder="Base Time" name = "basetime" style="background-color: white; height: 20px;">
+        </section>
+        <br>
+        <section class = "input">
+            <label for "targetlocation">TARGET LOCATION:</label>
+            <input type = "text" id = "targetlocation" name = "targetlocation" placeholder="Target Location" style="background-color: white; height: 20px;">
+            <div class="dropdown">
+              <buton>LOCATIONS<br>(hover over me)</buton>
+              <div class="dropdown-content">
+                <ul>
+                  <li>Germany: <u>Europe/Luxembourg</u></li>
+                  <li>India: <u>Asia/Kolkata</u></li>
+                  <li>Dubai: <u>Asia/Dubai</u></li>
+                  <li>France: <u>Europe/Paris</u></li>
+                  <li>United Kingdom:
+                    <ul>
+                      <li>London: <u>Europe/London</u></li>
+                    </ul>
+                  </li>
+                  <li>United States:
+                    <ul>
+                      <li>Chicago: <u>America/Chicago</u></li>
+                    </ul>
+                  </li>
+                  <li>Australia:
+                    <ul>
+                      <li>Melbourne: <u>Australia/Melbourne</u></li>
+                      <li>Sydney: <u>Australia/Sydney</u></li>
+                    </ul>
+                  </li>
+                  <li>Japan:
+                    <ul>
+                      <li>Hong Kong: <u>Asia/Hong_Kong</u></li>
+                      <li>Tokyo: <u>Asia/Tokyo</u></li>
+                    </ul>
+                  </li>
+                  <li>Thailand: <u>Asia/Bangkok</u></li>
+                  <li>South Korea: <u>Asia/Seoul</u></li>
+                  <li>Malaysia: <u>Asia/Kuala_Lumpur</u></li>
+                  <li>Netherlands: <u>Europe/Amsterdam</u></li>
+                  <li>Singapore: <u>Asia/Singapore</u></li>
+                  <li>Philippines: <u>Asia/Manila</u></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <br><br>
+          <div class = "button">
+            <button onclick="getData()">CONVERT</button>
+          </div>
+          <div class = "time">
+          </div>
+      </form>
+      <br>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./timezone.js">
+    </script>
+  </body>
+</html>
+ 

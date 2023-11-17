@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../home/home.html">Home</a>
+      <a href="../students/students.html">Students</a>
+      <a href="../assignments/assignments.html">Assignments</a>
+      <a href="../payments/payments.html">Payments</a>
+      <a href="../classes/classes.html">Classes</a>
+      <a href="../time zone/timezone.html">Time Zone<br>Convertor</a>
+      <a href="../login/login.html">Sign Out</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <h1 class = "title">WELCOME</h1>
+      <br><br>
+      <div class = "row1">
+        <button onclick="window.location.href = '../students/students.html';">STUDENTS</button>
+        <button onclick="window.location.href = '../assignments/assignments.html';">ASSIGNMENTS</button>
+      </div>
+      <br>
+      <div class = "row2">
+        <button onclick="window.location.href = '../payments/payments.html';">PAYMENTS</button>
+        <button onclick="window.location.href = '../classes/classes.html';">CLASSES</button>
+      </div>
+      <br>
+      <div class = "row3">
+        <button onclick="window.location.href = '../time zone/timezone.html';">TIME ZONE<br>CONVERTOR</button>
+      </div>
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
+ 
