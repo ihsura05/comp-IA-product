@@ -82,3 +82,11 @@ input {
     align-items: center;
 }
 
+.oneresponse {
+  margin-left: 450px;
+  margin-right: 454px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}

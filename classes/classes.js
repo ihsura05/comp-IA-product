@@ -7,7 +7,7 @@ function closeNav() {
 }
 
 var button = $('button');
-var events = $('.events');
+var classes = $('.classes');
 
 button.on("click", printResponse);
 
@@ -16,15 +16,20 @@ function printResponse(event){
   var name = $(`.name`).val();
   var time = $(`.time`).val();
   var description = $(`.description`).val();
-  events.append(`
-  <p>${name}</p><br>
-  <p>${time}</p><br>
-  <p>${description}</p>`);
+  classes.append(`
+    <div class = "oneevent">
+    <p>${name}</p><br>
+    <p>${time}</p><br>
+    <p>${description}</p>
+    </div>
+    <br>
+    <br>
+    `);
   event.preventDefault();
-}
 
-const inputs = document.querySelectorAll('#name, #time, #description');
+  const inputs = document.querySelectorAll('#name, #time, #description');
 
   inputs.forEach(input => {
     input.value = '';
   });
+}
