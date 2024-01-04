@@ -2,7 +2,7 @@
 $servername = "DESKTOP-0PM2C22";
 $username = "arushi";
 $password = "my@sql12345";
-$dbname = "Local instance MySQL80";
+$dbname = "students";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
