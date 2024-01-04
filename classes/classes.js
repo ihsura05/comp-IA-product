@@ -18,9 +18,9 @@ function printResponse(event){
   var description = $(`.description`).val();
   classes.append(`
     <div class = "oneevent">
-    <p>${name}</p><br>
-    <p>${time}</p><br>
-    <p>${description}</p>
+    <p class = "subpart">${name}</p><br>
+    <p class = "subpart">${time}</p><br>
+    <p class = "subpart">${description}</p>
     </div>
     <br>
     <br>
