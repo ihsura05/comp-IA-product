@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Retrieve data from the database
-$sql = "SELECT * FROM sql11676655";
+$sql = "SELECT * FROM students";
 $result = $conn->query($sql);
 
 // Display data in a table

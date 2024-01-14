@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $name = $_POST['name'];
 
 // Insert data into the database
-$sql = "INSERT INTO sql11676655 (name) VALUES ('$name')";
+$sql = "INSERT INTO students (name) VALUES ('$name')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data inserted successfully";
