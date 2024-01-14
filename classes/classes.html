@@ -22,22 +22,22 @@
 
       <h1 class = "title">CLASSES</h1>
       <br><br>
-      <div class = "form">
+      <form action = "insert.php" method = "post" class = "form">
         <br>
-        <input type = "text" id = "name" placeholder="Event Name" style="background-color: lightblue; height: 20px;">
+        <input type = "text" name = "name" placeholder="Event Name" style="background-color: lightblue; height: 20px;">
         <br>
-        <input type = "datetime-local" id = "time" placeholder="Time" style="background-color: lightblue; height: 20px;">
+        <input type = "datetime-local" name = "time" placeholder="Time" style="background-color: lightblue; height: 20px;">
         <br>
-        <input type = "text" id = "description" placeholder="Description" style="background-color: lightblue; height: 20px;">
+        <input type = "text" name = "description" placeholder="Description" style="background-color: lightblue; height: 20px;">
         <br><br>
         <button>ADD EVENT</button>
-      </div>
+      </form>
       <br><br>
 
       <section class = "classes">
+        <?php include 'display.php'; ?>
       </section>
-      <br>
-      <br>
+      <br><br>
 
       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
