@@ -2,7 +2,7 @@
 $servername = "sql11.freemysqlhosting.net";
 $username = "sql11676655";
 $password = "gHIw8lGWxf";
-$dbname = "students";
+$dbname = "sql11676655";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $name = $_POST['name'];
 
 // Insert data into the database
-$sql = "INSERT INTO students (name) VALUES ('$name')";
+$sql = "INSERT INTO sql11676655 (name) VALUES ('$name')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data inserted successfully";

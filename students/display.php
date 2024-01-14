@@ -2,7 +2,7 @@
 $servername = "sql11.freemysqlhosting.net";
 $username = "sql11676655";
 $password = "gHIw8lGWxf";
-$dbname = "students";
+$dbname = "sql11676655";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Retrieve data from the database
-$sql = "SELECT * FROM your_table_name";
+$sql = "SELECT * FROM sql11676655";
 $result = $conn->query($sql);
 
 // Display data in a table
