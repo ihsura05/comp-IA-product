@@ -22,14 +22,17 @@
 
       <h1 class = "title">STUDENTS</h1>
       <br><br>
-      <div class = "button">
+      <form action = "insert.php" method = "post" class = "button">
         <br>
-        <input type = "text" id = "student" name = "student" placeholder="Student Name" style="background-color: lightblue; height: 20px;">
+        <input type = "text" id = "name" name = "name" placeholder="Student Name" style="background-color: lightblue; height: 20px;">
         <br><br>
         <button>ADD STUDENT</button>
-      </div>
+      </form>
 
-      <!-- <p>name: {{ name }}</p> -->
+      <section class = "students">
+        <?php include 'display.php'; ?>
+      </section>
+      <br><br>
 
       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
