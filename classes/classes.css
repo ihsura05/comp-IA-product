@@ -95,6 +95,7 @@ div {
     border-width: 4px;
     border-color: black;
     float: right;
+    text-align: center;
     p {
       font-size: 15px;
     }
