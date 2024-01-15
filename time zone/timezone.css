@@ -60,13 +60,14 @@ input {
 }
 
 button {
-    height: 40px;
-    width: 150px;
+    height: 60px;
+    width: 100px;
     background-color: black;
     color: white;
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'Playfair Display', serif;
 }
 
 .button {

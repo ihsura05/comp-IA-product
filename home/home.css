@@ -62,6 +62,7 @@ button {
     color: white;
     cursor: pointer;
     border-radius: 50px;
+    font-family: 'Playfair Display', serif;
 }
 
 button:hover {
