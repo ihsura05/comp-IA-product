@@ -1,6 +1,13 @@
 body {
-    background-color: lightblue;
-    font-family: 'Roboto Slab', serif;
+  background-image: url(../assets/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+:before {
+  opacity: 0.5;
 }
 
 .title {
@@ -50,8 +57,12 @@ body {
   }
 
   table, th, td {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 7px;
   }
 
   table {
