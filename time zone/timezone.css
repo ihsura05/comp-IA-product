@@ -53,10 +53,12 @@ body {
 .input {
     text-align: center;
     font-size: 25px;
+    font-family: 'Roboto Slab', serif;
 }
 
 input {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 button {
@@ -67,7 +69,7 @@ button {
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .button {

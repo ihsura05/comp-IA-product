@@ -57,7 +57,7 @@ button {
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .form {
@@ -82,7 +82,7 @@ button:hover {
 input {
     text-align: center;
     align-items: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 div {
@@ -98,6 +98,7 @@ div {
     border-color: black;
     float: right;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
     p {
       font-size: 15px;
     }
